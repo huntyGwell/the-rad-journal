@@ -1,0 +1,17 @@
+C++   ?
+
+ascii art for each day of the week
+	needs access to date/time
+a goodbye ascii messgae when exiting the program.
+		---its own headder file
+
+ask how the day was?
+
+20(+) (?funny?)icebreaker promopts
+	randmoly different each time
+		--- its own headder file 
+
+different color text for hte prompts and the user-input
+have a dely in the charecter printing on the promots?
+
+store it in a vector so that it can be indexed and accessed?
