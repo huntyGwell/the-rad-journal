@@ -37,10 +37,3 @@ public:
         std::cout << "Current date and time: " << std::asctime(timeinfo) << std::endl;
     }
 };
-
-int main() {
-    Week week;
-    week.Monday();
-    week.GetDateTime();
-    return 0;
-}
