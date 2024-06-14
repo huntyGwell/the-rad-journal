@@ -39,25 +39,25 @@ C++ is a compiled language. So that means you will need to compile it on your ma
 My preferred way is g++.
 Make sure g++ is installed [instructions here](https://www3.cs.stonybrook.edu/~alee/g++/g++.html)
 Then in the terminal compile journal.cpp
-'g++ journal.cpp -o journal'
-'./journal'
+`g++ journal.cpp -o journal`
+`./journal`
 
 Now you will be given a writing prompt
 When you are done simply:
 1. press enter
-2. Type 'done'
+2. Type `done`
 3. And press enter again
 
 ### Appending 
 If you want to append you go into the Entries folder 
 There is a python file that you can use to append to any text file.
 To do so simply type in the terminal:
-'python3 append_entry.py'
+`python3 append_entry.py`
 - you will see all your entries that you have made.
 - choose the one you want to append by typing in its name.
 - Once you are done appending simply:
 1. press enter
-2. Type 'done'
+2. Type `done`
 3. And press enter again
 
 
