@@ -19,7 +19,8 @@ although the idea was not terribly complicated it did take some interesting turn
 I hade help with the ascii files
 the actual ascii art can be found at [The ASCII Art Archive](https://www.asciiart.eu/)
 and creating the text banners was done with the help of [ASCII.today](https://ascii.today/)
-I created a directory for the text files to hold the ascii art called days
+
+I created a directory of text files to hold the ascii art called 'Days'
 I used Ctime to figure out the days and to create the entry file names.
 I used chrono to adjust the speed at which the prompt prints to the console.
 separate header files for the prompts and choosing one at random. 
