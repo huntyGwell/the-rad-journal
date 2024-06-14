@@ -11,26 +11,26 @@ I started with a fresh install of Ubuntu Linux on the laptop mentioned earlier.
 I as I was mucking around with it I got the idea to make a CLI journal.
 I thought it would be a great opportunity to teach myself C++, nano, git, github, markdown and vim.
 I gained some appreciation for vim but ended up using VS-code a lot more. and learning how to debug better with VS-code.
+![IMG_9726](https://github.com/huntyGwell/the-rad-journal/assets/108026570/def3b418-1ec6-488c-a077-cc2656442aad)
 
 
-although the idea was not terribly complicated it did take some interesting turns as I decided that I wanted figure out how to store the entries as separate files, print things out in different colors, print out at different speeds, and make the ascii art still look good.
+Although the idea was not terribly complicated it did take some interesting turns as I decided that I wanted figure out how to store the entries as separate files, print things out in different colors, print out at different speeds, and make the ascii art still look good.
 
 ## How I Put It together
-I hade help with the ascii files
-the actual ascii art can be found at [The ASCII Art Archive](https://www.asciiart.eu/)
-and creating the text banners was done with the help of [ASCII.today](https://ascii.today/)
+I hade help with the ascii files.
+The actual ascii art can be found at [The ASCII Art Archive](https://www.asciiart.eu/)
+Creating the text banners was done with the help of [ASCII.today](https://ascii.today/)
 
-I created a directory of text files to hold the ascii art called 'Days'
 I used Ctime to figure out the days and to create the entry file names.
 I used chrono to adjust the speed at which the prompt prints to the console.
-separate header files for the prompts and choosing one at random. 
-separate header for accessing the ascii art.
-separate header for writing out.
+Separate header files for the prompts and choosing one at random. 
+Separate header for accessing the ascii art.
+Separate header for writing out.
 I did this to keep the main cpp file clean and readable.
 
-the ascii art for each day, and the goodbye message is all stored in the 'Day' directory 
-the Entries will be sorted in the 'Entries' directory.
-I also had a file called ideas.txt to brainstorm functionality.
+The ascii art for each day, and the goodbye message is all stored in the 'Day' directory. 
+The Entries will be sorted in the 'Entries' directory.
+I also had a file called 'ideas.txt' to brainstorm functionality.
 
 ## How you make it work
 You will need to start by cloning this repo [instructions here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
@@ -45,7 +45,7 @@ Then in the terminal compile journal.cpp
 
 Now you will be given a writing prompt
 When you are done simply:
-1. press enter
+1. Press enter
 2. Type `done`
 3. And press enter again
 
@@ -57,7 +57,7 @@ To do so simply type in the terminal:
 - you will see all your entries that you have made.
 - choose the one you want to append by typing in its name.
 - Once you are done appending simply:
-1. press enter
+1. Press enter
 2. Type `done`
 3. And press enter again
 
@@ -65,5 +65,5 @@ To do so simply type in the terminal:
 
 ## conclusion 
 I had a blast learning a lot of interestingprograming tricks and making something new.
-use it all you want.
+Use it all you want.
 I hope you enjoy.
