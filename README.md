@@ -1,5 +1,7 @@
 # The Rad Journal
-* A fun CLI journal with ascii art * 
+
+*A fun CLI journal with ascii art* 
+
 Several weeks ago I found an inexpensive low-spec laptop and I wanted to use it as a journal
 Moreover I wanted to write the journal program as a Command-Line-Interface(CLI)
 This is my first big solo project, outside of my college course work and YouTube walkthroughs.
