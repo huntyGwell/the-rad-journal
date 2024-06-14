@@ -40,6 +40,7 @@ My preferred way is g++.
 Make sure g++ is installed [instructions here](https://www3.cs.stonybrook.edu/~alee/g++/g++.html)
 Then in the terminal compile journal.cpp
 `g++ journal.cpp -o journal`
+
 `./journal`
 
 Now you will be given a writing prompt
