@@ -2,6 +2,8 @@ C++   ?
 
 ascii art for each day of the week
 	needs access to date/time
+
+ascii is made in a folder of text files so the headder need to be able to access and print those
 a goodbye ascii messgae when exiting the program.
 		---its own headder file
 
@@ -11,7 +13,22 @@ ask how the day was?
 	randmoly different each time
 		--- its own headder file 
 
+changed my mind. there will be 32 just because the computer i intend to soley use as a journal is a 32bit machine (just for funzies)
+still randomized and in its own headder.
+
 different color text for hte prompts and the user-input
 have a dely in the charecter printing on the promots?
 
 store it in a vector so that it can be indexed and accessed?
+
+~~~~
+
+#LOOK INTO CURSE OR CURSES IN C++ TO MAKE THIS 
+
+-----
+
+color for ASCII art:
+color for prompt:
+color for user input: ??(possible)
+
+print prompt slow?? one char/word at a time or otherwise with a delay?
