@@ -37,9 +37,8 @@ void printSlowly (const std::string &text, std::chrono::milliseconds delay) {
         std::ifstream file("Days/Monday.txt");
         std::string line;
         while (std::getline(file, line)) {
-            printSlowly(line, std::chrono::milliseconds(2));
-            std::cout << std::endl;        
-            }
+            std::cout << line << std::endl;      
+        }
     }
 
     void Tuesday() {
@@ -50,9 +49,8 @@ void printSlowly (const std::string &text, std::chrono::milliseconds delay) {
         std::ifstream file("Days/Tuesday.txt");
         std::string line;
         while (std::getline(file, line)) {
-            printSlowly(line, std::chrono::milliseconds(2));
-            std::cout << std::endl;        
-            }
+            std::cout << line << std::endl;       
+        }
     }
 
     void Wednesday() {
@@ -63,8 +61,8 @@ void printSlowly (const std::string &text, std::chrono::milliseconds delay) {
         std::ifstream file("Days/Wednesday.txt");
         std::string line;
         while (std::getline(file, line)) {
-            printSlowly(line, std::chrono::milliseconds(2));
-            std::cout << std::endl;        }
+            std::cout << line << std::endl;       
+        }
     }
 
     void Thursday() {
@@ -75,9 +73,8 @@ void printSlowly (const std::string &text, std::chrono::milliseconds delay) {
         std::ifstream file("Days/Thursday.txt");
         std::string line;
         while (std::getline(file, line)) {
-            printSlowly(line, std::chrono::milliseconds(2));
-            std::cout << std::endl;        
-            }
+            std::cout << line << std::endl;
+        }
     }
 
     void Friday() {
@@ -88,9 +85,8 @@ void printSlowly (const std::string &text, std::chrono::milliseconds delay) {
         std::ifstream file("Days/Friday.txt");
         std::string line;
         while (std::getline(file, line)) {
-            printSlowly(line, std::chrono::milliseconds(2));
-            std::cout << std::endl;        
-            }
+            std::cout << line << std::endl;     
+        }
     }
 
     void Saturday() {
@@ -101,8 +97,7 @@ void printSlowly (const std::string &text, std::chrono::milliseconds delay) {
         std::ifstream file("Days/Saturday.txt");
         std::string line;
         while (std::getline(file, line)) {
-            printSlowly(line, std::chrono::milliseconds(2));
-            std::cout << std::endl;
+            std::cout << line << std::endl;
         }
     }
 
@@ -114,8 +109,7 @@ void printSlowly (const std::string &text, std::chrono::milliseconds delay) {
         std::ifstream file("Days/Sunday.txt");
         std::string line;
         while (std::getline(file, line)) {
-            printSlowly(line, std::chrono::milliseconds(2));
-            std::cout << std::endl;
+            std::cout << line << std::endl;
         }
     }
     void Goodbye() {
@@ -126,8 +120,7 @@ void printSlowly (const std::string &text, std::chrono::milliseconds delay) {
         std::ifstream file("Days/Goodbye.txt");
         std::string line;
         while (std::getline(file, line)) {
-            printSlowly(line, std::chrono::milliseconds(2));
-            std::cout << std::endl;
+            std::cout << line << std::endl;
         }
     }
     
