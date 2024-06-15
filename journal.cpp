@@ -8,20 +8,26 @@
 #include "write-out.h"
 
 int main(){
-    std::cout << "HELLO!" << std::endl;
+    printSlowly("HELLO \n", std::chrono::milliseconds(100));
     //change color from ascii-art.h
     setColor(GREEN);
-    std::cout << "Welcome to your journal!" << std::endl;
-    printDayOfWeek();
-    setColor(RED);
+    printSlowly("Welcome to your journal!\n", std::chrono::milliseconds(100));
+    std::cout << std::endl;
+    Slow_printDayOfWeek();
+    setColor(MAGENTA);
     std::string myPrompt = GetPrompt();
-    std::cout << myPrompt << std::endl;
+    printSlowly(myPrompt, std::chrono::milliseconds(100));
+    std::cout << std::endl;
+    //flush the buffer
+    std::cout << std::flush;
+    
+    setColor(BLUE);
 
     //get user input
     std::stringstream entry;
     std::stringstream finalEntry;
-    while (true) {
-        std::string line;
+    std::string line;
+    while (line != "done") {
         std::getline(std::cin, line);
         if (line == "done") {
             break;
@@ -31,7 +37,7 @@ int main(){
     finalEntry << myPrompt << std::endl << entry.str() << std::endl;
     writeOut(finalEntry.str());
     //goodbye message
-    Goodbye();
+    Slow_Goodbye();
 
     return 0;
 

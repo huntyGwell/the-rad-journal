@@ -3,6 +3,9 @@
 #include <iostream>
 #include <ctime>
 #include <fstream>
+#include <chrono>
+#include <thread>
+
 
 // Function to set text color using ANSI escape codes
 void setColor(const std::string &color) {
@@ -19,6 +22,13 @@ const std::string MAGENTA = "\033[35m";
 const std::string CYAN = "\033[36m";
 const std::string WHITE = "\033[37m";
 
+void printSlowly (const std::string &text, std::chrono::milliseconds delay) {
+    for (char c : text) {
+        std::cout << c << std::flush;
+        std::this_thread::sleep_for(delay);
+    }
+}
+
     void Monday() {
         setColor(BLUE);
         std::cout << "It's Monday!" << std::endl;
@@ -27,8 +37,9 @@ const std::string WHITE = "\033[37m";
         std::ifstream file("Days/Monday.txt");
         std::string line;
         while (std::getline(file, line)) {
-            std::cout << line << std::endl;
-        }
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;        
+            }
     }
 
     void Tuesday() {
@@ -39,8 +50,9 @@ const std::string WHITE = "\033[37m";
         std::ifstream file("Days/Tuesday.txt");
         std::string line;
         while (std::getline(file, line)) {
-            std::cout << line << std::endl;
-        }
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;        
+            }
     }
 
     void Wednesday() {
@@ -51,8 +63,8 @@ const std::string WHITE = "\033[37m";
         std::ifstream file("Days/Wednesday.txt");
         std::string line;
         while (std::getline(file, line)) {
-            std::cout << line << std::endl;
-        }
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;        }
     }
 
     void Thursday() {
@@ -63,8 +75,9 @@ const std::string WHITE = "\033[37m";
         std::ifstream file("Days/Thursday.txt");
         std::string line;
         while (std::getline(file, line)) {
-            std::cout << line << std::endl;
-        }
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;        
+            }
     }
 
     void Friday() {
@@ -75,8 +88,9 @@ const std::string WHITE = "\033[37m";
         std::ifstream file("Days/Friday.txt");
         std::string line;
         while (std::getline(file, line)) {
-            std::cout << line << std::endl;
-        }
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;        
+            }
     }
 
     void Saturday() {
@@ -87,7 +101,8 @@ const std::string WHITE = "\033[37m";
         std::ifstream file("Days/Saturday.txt");
         std::string line;
         while (std::getline(file, line)) {
-            std::cout << line << std::endl;
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;
         }
     }
 
@@ -99,7 +114,8 @@ const std::string WHITE = "\033[37m";
         std::ifstream file("Days/Sunday.txt");
         std::string line;
         while (std::getline(file, line)) {
-            std::cout << line << std::endl;
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;
         }
     }
     void Goodbye() {
@@ -110,7 +126,8 @@ const std::string WHITE = "\033[37m";
         std::ifstream file("Days/Goodbye.txt");
         std::string line;
         while (std::getline(file, line)) {
-            std::cout << line << std::endl;
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;
         }
     }
     
@@ -162,3 +179,131 @@ void printDayOfWeek() {
     }
 }
 
+    void Slow_Monday() {
+        setColor(BLUE);
+        std::cout << "It's Monday!" << std::endl;
+        //print the textfile to the consol /Days/Monday.txt
+        setColor(YELLOW);
+        std::ifstream file("Days/Monday.txt");
+        std::string line;
+        while (std::getline(file, line)) {
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;        
+            }
+    }
+
+    void Slow_Tuesday() {
+        setColor(BLUE);
+        std::cout << "It's Tuesday!" << std::endl;
+        //print the textfile to the consol /Days/Tuesday.txt
+        setColor(YELLOW);
+        std::ifstream file("Days/Tuesday.txt");
+        std::string line;
+        while (std::getline(file, line)) {
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;        
+            }
+    }
+
+    void Slow_Wednesday() {
+        setColor(BLUE);
+        std::cout << "It's Wednesday!" << std::endl;
+        //print the textfile to the consol /Days/Wednesday.txt
+        setColor(YELLOW);
+        std::ifstream file("Days/Wednesday.txt");
+        std::string line;
+        while (std::getline(file, line)) {
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;        }
+    }
+
+    void Slow_Thursday() {
+        setColor(BLUE);
+        std::cout << "It's Thursday!" << std::endl;
+        //print the textfile to the consol /Days/Thursday.txt
+        setColor(YELLOW);
+        std::ifstream file("Days/Thursday.txt");
+        std::string line;
+        while (std::getline(file, line)) {
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;        
+            }
+    }
+
+    void Slow_Friday() {
+        setColor(BLUE);
+        std::cout << "It's Friday!" << std::endl;
+        //print the textfile to the consol /Days/Friday.txt
+        setColor(YELLOW);
+        std::ifstream file("Days/Friday.txt");
+        std::string line;
+        while (std::getline(file, line)) {
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;        
+            }
+    }
+
+    void Slow_Saturday() {
+        setColor(BLUE);
+        std::cout << "It's Saturday!" << std::endl;
+        //print the textfile to the consol /Days/Saturday.txt
+        setColor(YELLOW);
+        std::ifstream file("Days/Saturday.txt");
+        std::string line;
+        while (std::getline(file, line)) {
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;
+        }
+    }
+
+    void Slow_Sunday() {
+        setColor(BLUE);
+        std::cout << "It's Sunday!" << std::endl;
+        //print the textfile to the consol /Days/Sunday.txt
+        setColor(YELLOW);
+        std::ifstream file("Days/Sunday.txt");
+        std::string line;
+        while (std::getline(file, line)) {
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;
+        }
+    }
+    void Slow_Goodbye() {
+        setColor(BLUE);
+        std::cout << "Goodbye!" << std::endl;
+        //print the textfile to the consol /Days/Goodbye.txt
+        setColor(YELLOW);
+        std::ifstream file("Days/Goodbye.txt");
+        std::string line;
+        while (std::getline(file, line)) {
+            printSlowly(line, std::chrono::milliseconds(2));
+            std::cout << std::endl;
+        }
+    }
+    void Slow_printDayOfWeek() {
+    std::string dayOfWeek = getDayOfWeek();
+    if (dayOfWeek == "Monday") {
+        Slow_Monday();
+    }
+    else if (dayOfWeek == "Tuesday") {
+        Slow_Tuesday();
+    }
+    else if (dayOfWeek == "Wednesday") {
+        Slow_Wednesday();
+    }
+    else if (dayOfWeek == "Thursday") {
+        Slow_Thursday();
+    }
+    else if (dayOfWeek == "Friday") {
+        Slow_Friday();
+    }
+    else if (dayOfWeek == "Saturday") {
+        Slow_Saturday();
+    }
+    else if (dayOfWeek == "Sunday") {
+        Slow_Sunday();
+    }
+    else {
+        Goodbye();
+    }
+}

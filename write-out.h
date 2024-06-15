@@ -47,8 +47,8 @@ void writeOut(std::string entry) {
     std::ofstream file;
     std::string fileName = "Entries/" + getDateTime() + ".txt";
     file.open(fileName);
-    file << get_the_ascii_day();
+    //file << get_the_ascii_day();
     file << entry;
-    file << get_the_goodbye();
+    //file << get_the_goodbye();
     file.close();
 }
