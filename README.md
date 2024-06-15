@@ -33,6 +33,7 @@ The Entries will be sorted in the 'Entries' directory.
 I also had a file called 'ideas.txt' to brainstorm functionality.
 
 **the ascii-art.h file is fairly large**
+
 this is becasue i made 2 versions of the function(s) that print the ascii art. one prints at a slow rate for visiual effect to the consol. When I was using this function to write to the output file it, as you might assume, acuse an incredible delay in the write time. to solve this i made a slow version for the consol and a fast version for the output file and the problem was solved.
 
 ## How you make it work
