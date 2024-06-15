@@ -13,7 +13,7 @@ file_name = input("Enter the name of a file to append to: ")
 with open(file_name, "a") as file:
     # Write a new line to the file
     # append the contents of the text file found in ../days/Append.txt
-    with open("../days/Append.txt") as append_file:
+    with open("../Days/Append.txt") as append_file:
         for line in append_file:
             file.write(line)
     # get user input to append to the file
